@@ -43,7 +43,7 @@ const EditorPage = () => {
         ({clients , username , socketId}) =>{
           if(username !== location.state?.username){//remove self or echo of user joined 
               toast.success(`${username} joined the room.`);
-              console.log(`${username} joined`);
+              // console.log(`${username} joined`);
           }
 
           setClients(clients);//client = {socketid : username} example
